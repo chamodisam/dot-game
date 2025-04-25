@@ -1,12 +1,56 @@
-# React + Vite
+# Connect Four Game (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Connect Four game built using React JS. Players alternate turns to drop tokens into a grid, with the objective of connecting four of their tokens in a row, either horizontally, vertically, or diagonally.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Two-player gameplay: Players take turns dropping tokens into the grid.
 
-## Expanding the ESLint configuration
+- Winner detection: The game detects when a player connects four tokens in a row, column, or diagonal.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Game reset: After a winner is determined, the game can be reset for a new round.
+
+- Responsive design: The game is responsive and works on different screen sizes.
+
+## Demo
+
+
+https://github.com/user-attachments/assets/01ef2bcd-919d-4ef7-8c5f-1b5585480241
+
+## Installation
+
+To get started with this project, follow these steps:
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/chamodisam/dot-game.git
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd dot-game
+   ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## How to Play
+
+- Click on any slot in the grid to drop your token.
+- Players take turns with "Red" and "Yellow" tokens.
+- The first player to connect four tokens in a row (horizontally, vertically, or diagonally) wins the game.
+- Once the game ends, the winner is displayed, and a button to restart the game is shown.
+
+## Technologies Used
+
+- **React**: JavaScript library for building the user interface.
+- **CSS**: For styling and layout.
+- **JavaScript**: For the game logic, handling turns and detecting winners.
+
